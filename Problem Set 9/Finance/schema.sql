@@ -1,0 +1,1 @@
+CREATE TABLE stocks (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, user_id INTEGER NOT NULL, symbol TEXT NOT NULL, price NUMERIC NOT NULL, shares INTEGER NOT NULL, total_price NUMERIC NOT NULL, date_created datetime default current_timestamp, FOREIGN KEY (user_id) REFERENCES users(id));
